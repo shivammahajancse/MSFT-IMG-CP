@@ -1,0 +1,45 @@
+.menu-parent{
+    display: flex;
+    flex-direction: row;
+    border-bottom: 0.5vmin solid black;
+    padding-right: 1vmin;
+    padding-left: 1vmin;
+}
+.menu-parent .menu-child{
+    flex: 7;
+    display: flex;
+    flex-direction: row;
+}
+h1{
+    flex: 3;
+}
+button{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+link{
+    text-decoration: none;
+}
+.search{
+    flex: 6;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+input{
+    margin: 0.5vmin;
+    width: 30vmin;
+    height: 3vmin;
+}
+.menuRight{
+    flex: 3;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
