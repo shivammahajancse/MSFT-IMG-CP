@@ -21,8 +21,9 @@ button{
     background: none;
     border: none;
     cursor: pointer;
+    text-decoration: none;
 }
-link{
+Link .home{
     text-decoration: none;
 }
 .search{
