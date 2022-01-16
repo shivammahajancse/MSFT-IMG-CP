@@ -1,0 +1,18 @@
+.posts-Parent{
+    display: flex;
+    flex-direction: column;
+    border: 0.2vmin solid black;
+}
+.posts-Details{
+    display: flex;
+    flex-direction: row;
+    border: 0.2vmin solid black;
+}
+.posts-Content{
+    border: 0.2vmin solid black;
+}
+.buttons{
+    display: flex;
+    flex-direction: row;
+    border: 0.2vmin solid black;
+}

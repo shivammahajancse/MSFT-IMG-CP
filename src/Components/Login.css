@@ -11,11 +11,6 @@
     border-radius: 2vmin;
     font-size: 2vmin;
 }
-html{
-    height: 100%;
-    width: 100%;
-    background-color: rgb(85, 88, 107);
-}
 .login-midparent{
     font-size: 2vmin;
     color: white;
@@ -23,7 +18,7 @@ html{
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    height: 100.5%;
+    height: 100%;
     width: 45%;
     background-color: #0e2a47;
     border-radius: 1.6vmin;
@@ -42,7 +37,7 @@ html{
 }
 .login-gp{
     margin: auto;
-    margin-top: 10vmin;
+    margin-top: 15vmin;
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -51,9 +46,8 @@ html{
     height: 69vmin;
     border-radius: 2.1vmin;
     background-color: #cadff5;
-    border: 2px solid black;
     font-size: 1vmin;
-    box-shadow: 12px 12px 2px 1px rgba(0, 0, 0, 0.2);
+    box-shadow: 1.3vmin 1.3vmin 1.4vmin 0.2vmin rgb(31, 30, 30);
 }
 .signin{
     border-radius: 1vmin;

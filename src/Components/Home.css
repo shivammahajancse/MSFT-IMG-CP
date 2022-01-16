@@ -1,5 +1,11 @@
 .home{
-    color: white;
     width: 100%;
-    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.homeParent{
+    border: 0.2vmin solid black;
+    width: 50%;
+    height: 100vmin;
 }
