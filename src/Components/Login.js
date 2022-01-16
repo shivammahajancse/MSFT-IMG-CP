@@ -4,6 +4,9 @@ import '../App.js'
 import { useState } from 'react';
 import { Redirect } from 'react-router-dom';
 import { Link } from 'react-router-dom';
+import { TextField } from '@mui/material';
+import { Button } from '@mui/material';
+// import { html } from 'cheerio/lib/api/manipulation';
 function Login(props) {
     const [user, setuser] = useState({ userName: "", pass: "" });
     const [message, setmessage] = useState("");
@@ -19,17 +22,19 @@ function Login(props) {
     }
     return (
         <div className='login-gp'>
+            <div className="login-midparent">
+                <div className="logo"></div>
+                We Support Students and their Dreams !
+            </div>
             <div className='login-parent'>
                 <img src="" alt="" />
-                <h1>SignIn</h1>
-                <input onChange={(e) => { setuser({ userName: `${e.target.value}`, pass: `${user.pass}` }) }} placeholder='Name' type="text" />
-                <input onChange={(e) => { setuser({ userName: `${user.userName}`, pass: `${e.target.value}` }) }} placeholder='Password' type="text" />
-                <button className='signin' onClick={SignIn}>SignIn</button>
+                <h2>Acad Login!</h2>
+                <TextField style={{ margin: '1vmin' }} onChange={(e) => { setuser({ userName: `${e.target.value}`, pass: `${user.pass}` }) }} id="filled-basic" label="UserName" variant="filled" />
+                <TextField style={{ margin: '1vmin' }} onChange={(e) => { setuser({ userName: `${user.userName}`, pass: `${e.target.value}` }) }} id="filled-basic" label="Password" variant="filled" />
+                <Button style={{ margin: '1vmin' }} onClick={SignIn} variant="outlined">SignIn</Button>
+                <div className="message">{message}</div>
+                <div className="signUp-popUp">Not A User yet? <Link to='/signup' style={{ textDecoration: 'none' }}>SignUp</Link></div>
             </div>
-            <div className="message">{message}</div>
-            <Link to='/signup' style={{ textDecoration: 'none' }}>
-                <div className="signUp-popUp">Not A User SignUp Now</div>
-            </Link>
         </div>
     )
 }

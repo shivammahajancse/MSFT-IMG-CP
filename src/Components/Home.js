@@ -1,6 +1,7 @@
 import React from 'react'
 import Menu from './Menu'
 import '../App'
+import './Home.css'
 import { Redirect } from 'react-router-dom/cjs/react-router-dom.min';
 function Home(props) {
     console.log(props.loginIs);
@@ -10,8 +11,11 @@ function Home(props) {
     }
     console.log("inside home");
     return (
-        <div>
+        <div className='home'>
         <Menu LoginIs={props.loginIs} handleLogout={props.handleLogout}></Menu>
+        <div className="homeParent">
+            
+        </div>
         its home
         </div>
     )

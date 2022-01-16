@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom'
 function Menu(props) {
     return (
         <div className='menu-parent'>
-            <h1 to="/">Acad</h1>
+            <img src="menu-logo.PNG" to="/"></img>
             <div className='menu-child'>
                 <div className="search"><input type="text" /><button>Search</button></div>
                 <div className="menuRight">

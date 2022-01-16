@@ -1,20 +1,59 @@
+
 .login-parent{
+    background-color: #cadff5;
     align-self: center;
     display: flex;
     flex-direction: column;
+    align-items: center;
     justify-content: center;
-    align-items: center;
-    border: 0.5vmin solid black;
-    width: fit-content;
-    margin: auto;
-    margin-top: 20vmin;
-    border-radius: 5%;
+    width: 55%;
+    height: 100%;
+    border-radius: 2vmin;
+    font-size: 2vmin;
 }
-
-.login-gp{
+html{
+    height: 100%;
+    width: 100%;
+    background-color: rgb(85, 88, 107);
+}
+.login-midparent{
+    font-size: 2vmin;
+    color: white;
     display: flex;
-    flex-direction: column;
     align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 100.5%;
+    width: 45%;
+    background-color: #0e2a47;
+    border-radius: 1.6vmin;
+    z-index: 5;
+}
+.logo{
+    width: 40vmin;
+    height: 10vmin;
+    background-image: url('../Image/Capture.PNG');
+    background-size: cover;
+    margin: 3vmin;
+}
+.signUp-popUp{
+    margin: 2vmin;
+    font-weight: bold;
+}
+.login-gp{
+    margin: auto;
+    margin-top: 10vmin;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    text-align: center;
+    width: 100vmin;
+    height: 69vmin;
+    border-radius: 2.1vmin;
+    background-color: #cadff5;
+    border: 2px solid black;
+    font-size: 1vmin;
+    box-shadow: 12px 12px 2px 1px rgba(0, 0, 0, 0.2);
 }
 .signin{
     border-radius: 1vmin;
