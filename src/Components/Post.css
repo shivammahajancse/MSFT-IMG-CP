@@ -13,14 +13,17 @@
     font-weight: 200;
 }
 .posts-Details{
+    color: black;
     display: flex;
     flex-direction: column;
-    border: 0.2vmin solid black;
+    border-bottom: 0.2vmin solid black;
+    box-shadow: 0vmin 0.5vmin 1vmin 0vmin rgb(31, 30, 30);
     border-radius: 1vmin;
-    box-shadow: 0.5vmin 0.5vmin 1vmin 0vmin rgb(31, 30, 30);
+    background-color: #E6E6E3;
+    /* box-shadow: 0.5vmin 0.5vmin 1vmin 0vmin rgb(31, 30, 30); */
 }
 .posts-Details-Child{
-    /* margin: 1vmin; */
+    margin: 1vmin;
     padding: 1vmin;
     display:flex;
     flex-direction: row;
@@ -33,7 +36,8 @@
     padding:1vmin;
 }
 .time{
-    font-weight: bold;
+    font-size: 1.8vmin;
+    /* font-weight: bold; */
     margin-left: auto;
 }
 .buttons{
@@ -51,7 +55,7 @@
     margin: 0.5vmin;
 }
 .like:hover{
-    text-shadow:0 0 0.1vmin red,
-                0 0 0.1vmin red, 
-                0 0 0.1vmin red;
+    text-shadow:0 0 0.1vmin rgb(0, 0, 0),
+                0 0 0.1vmin rgb(0, 0, 0), 
+                0 0 0.1vmin rgb(0, 0, 0);
 }

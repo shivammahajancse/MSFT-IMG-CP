@@ -22,7 +22,7 @@ function Posts(props) {
                 <div className="posts-Content">{props.postsData.content}</div>
                 {/* <div className='image'></div> */}
                 <div className="buttons">
-                    <div className="like" onClick={()=>{setlike(parseInt(`${like}`)+1);props.postsData.like=like}}>
+                    <div className="like" onClick={()=>{setlike(parseInt(`${like}`)+1);console.log(props.postsData.like);props.postsData.like=like}}>
                     ❤️{like}
                     </div>
                     <div className="time">{props.postsData.time}</div>

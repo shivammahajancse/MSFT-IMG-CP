@@ -11,7 +11,9 @@ function Menu(props) {
     return (
         <div className='menu-parent'>
             {/* <div className='menu-logo' to="/">Acad!</div> */}
-            <img src={require('../Image/Capture.PNG')} width={'12%'} />
+            <Link to='/'>
+            <img src={require('../Image/Capture.PNG')} width={'47%'} alt={"logo not available"} />
+            </Link>
             <div className='menu-child'>
                 <button className="search"><input type="text" placeholder='Search'/><SearchRoundedIcon></SearchRoundedIcon>Search</button>
                 <div className="menuRight">
