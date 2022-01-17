@@ -6,6 +6,7 @@ import { Redirect } from 'react-router-dom';
 import { Link } from 'react-router-dom';
 import { TextField } from '@mui/material';
 import { Button } from '@mui/material';
+import Alert from '@mui/material/Alert';
 // import { html } from 'cheerio/lib/api/manipulation';
 function Login(props) {
     const [user, setuser] = useState({ userName: "", pass: "" });
@@ -32,7 +33,8 @@ function Login(props) {
                 <TextField style={{ margin: '1vmin' }} onChange={(e) => { setuser({ userName: `${e.target.value}`, pass: `${user.pass}` }) }} id="filled-basic" label="UserName" variant="filled" />
                 <TextField style={{ margin: '1vmin' }} onChange={(e) => { setuser({ userName: `${user.userName}`, pass: `${e.target.value}` }) }} id="filled-basic" label="Password" variant="filled" />
                 <Button style={{ margin: '1vmin' }} onClick={SignIn} variant="outlined">SignIn</Button>
-                <div className="message">{message}</div>
+                {/* <div className="message">{message}</div> */}
+                {message ? <Alert severity="error">{message}</Alert> : console.log('no message')}
                 <div className="signUp-popUp">Not A User yet? <Link to='/signup' style={{ textDecoration: 'none' }}>SignUp</Link></div>
             </div>
         </div>

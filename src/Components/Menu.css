@@ -1,13 +1,19 @@
 
 .menu-parent{
+    position: fixed;
     display: flex;
     flex-direction: row;
-    border: 0.5vmin solid black;
     padding: 2vmin;
-    margin: 0.5vmin;
-    border-radius: 1vmin;
-    width: 97%;
-    /* border-bottom-right-radius: 2vmin; */
+    border-radius: 0.5vmin;
+    width: 99%;
+    color: white;
+    box-shadow: 0vmin 0.5vmin 1vmin 0vmin rgb(31, 30, 30);
+    background-color: black;
+    z-index: 5;
+    margin-top: 0;
+}
+img{
+    margin-left: 1vmin;
 }
 .menu-child{
     flex: 7;
@@ -15,8 +21,12 @@
     flex-direction: row;
 }
 .menu-logo{
-    flex: 3;
+    flex: 1;
+    width: 20%;
     margin: 1vmin;
+    background-image: url('../Image/Capture.PNG');
+    background-size: contain;
+    background-repeat: none;
 }
 html{
     width: 100%;
@@ -29,11 +39,13 @@ button{
     flex-direction: column;
     background: none;
     border: none;
+    color: white;
     cursor: pointer;
     font-size: 2vmin;
+    transition: 0.2s ease-in-out;
 }
 .search{
-    flex: 6;
+    flex: 5;
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -45,7 +57,7 @@ input{
     height: 3vmin;
 }
 .menuRight{
-    flex: 3;
+    flex: 4;
     display: flex;
     justify-content: space-between;
     align-items: center;

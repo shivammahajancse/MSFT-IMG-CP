@@ -15,7 +15,7 @@ function Home(props) {
         <div className='home'>
             <Menu LoginIs={props.loginIs} handleLogout={props.handleLogout}></Menu>
             <div className="homeParent">
-            <Posts></Posts>
+            {props.postsData.map(each=>{return <Posts postsData={each}></Posts>})}
             </div>
             its home
         </div>

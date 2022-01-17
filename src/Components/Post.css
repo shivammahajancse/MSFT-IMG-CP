@@ -1,18 +1,57 @@
 .posts-Parent{
     display: flex;
     flex-direction: column;
-    border: 0.2vmin solid black;
+    /* border: 0.2vmin solid black; */
+    margin: 1vmin;
+    padding: 1vmin;
+}
+.name{
+    margin: 1vmin;
+    font-weight: bolder;
+}
+.bio{
+    font-weight: 200;
 }
 .posts-Details{
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     border: 0.2vmin solid black;
+    border-radius: 1vmin;
+    box-shadow: 0.5vmin 0.5vmin 1vmin 0vmin rgb(31, 30, 30);
+}
+.posts-Details-Child{
+    /* margin: 1vmin; */
+    padding: 1vmin;
+    display:flex;
+    flex-direction: row;
+    align-items: center;
+    font-size: 2vmin;
+    border-bottom: 0.3vmin solid black;
 }
 .posts-Content{
-    border: 0.2vmin solid black;
+    /* border: 0.2vmin solid black; */
+    padding:1vmin;
+}
+.time{
+    font-weight: bold;
+    margin-left: auto;
 }
 .buttons{
     display: flex;
     flex-direction: row;
-    border: 0.2vmin solid black;
+    align-items: center;
+    /* border: 0.2vmin solid black; */
+    padding: 1vmin;
+    margin: 1vmin;
+}
+.like{
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+    font-weight: bold;
+    margin: 0.5vmin;
+}
+.like:hover{
+    text-shadow:0 0 0.1vmin red,
+                0 0 0.1vmin red, 
+                0 0 0.1vmin red;
 }

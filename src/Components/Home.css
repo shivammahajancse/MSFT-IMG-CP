@@ -5,7 +5,9 @@
     align-items: center;
 }
 .homeParent{
-    border: 0.2vmin solid black;
+    /* border: 0.2vmin solid black; */
     width: 50%;
     height: 100vmin;
+    overflow: visible;
+    margin: 12vmin;
 }
