@@ -7,9 +7,13 @@ function Contactus(props) {
         return <Redirect to="/login"/>;
     }
     return (
-        <div>
+        <div className='contactus'>
         <Menu LoginIs={props.loginIs} handleLogout={props.handleLogout}></Menu>
-            Contact us!
+            <div className="contactus">
+                <div className="contactusChild">
+
+                </div>
+            </div>
         </div>
     )
 }

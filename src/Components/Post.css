@@ -1,26 +1,29 @@
 .posts-Parent{
     display: flex;
     flex-direction: column;
-    /* border: 0.2vmin solid black; */
     margin: 1vmin;
     padding: 1vmin;
 }
 .name{
     margin: 1vmin;
     font-weight: bolder;
+    font-size: 2.5vmin;
 }
 .bio{
     font-weight: 200;
+    font-size: 2vmin;
 }
 .posts-Details{
     color: black;
     display: flex;
     flex-direction: column;
-    border-bottom: 0.2vmin solid black;
-    box-shadow: 0vmin 0.5vmin 1vmin 0vmin rgb(31, 30, 30);
+    border: 0.2vmin solid black;
+    /* box-shadow: 0vmin 0.5vmin 1vmin 0vmin rgb(31, 30, 30); */
     border-radius: 1vmin;
-    background-color: #E6E6E3;
-    /* box-shadow: 0.5vmin 0.5vmin 1vmin 0vmin rgb(31, 30, 30); */
+    background-color: #F2F3F5;
+        /* box-shadow: 0.5vmin 0.5vmin 1vmin 0vmin rgb(31, 30, 30); */
+
+    /* box-shadow: 0vmin 0.5vmin 1vmin 0vmin rgb(31, 30, 30); */
 }
 .posts-Details-Child{
     margin: 1vmin;
@@ -32,19 +35,18 @@
     border-bottom: 0.3vmin solid black;
 }
 .posts-Content{
-    /* border: 0.2vmin solid black; */
     padding:1vmin;
+    font-weight: bold;
 }
 .time{
-    font-size: 1.8vmin;
-    /* font-weight: bold; */
+    font-size: 2vmin;
+    font-weight: bold;
     margin-left: auto;
 }
 .buttons{
     display: flex;
     flex-direction: row;
     align-items: center;
-    /* border: 0.2vmin solid black; */
     padding: 1vmin;
     margin: 1vmin;
 }
@@ -53,9 +55,4 @@
     transition: 0.3s ease-in-out;
     font-weight: bold;
     margin: 0.5vmin;
-}
-.like:hover{
-    text-shadow:0 0 0.1vmin rgb(0, 0, 0),
-                0 0 0.1vmin rgb(0, 0, 0), 
-                0 0 0.1vmin rgb(0, 0, 0);
 }

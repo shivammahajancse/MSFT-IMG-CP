@@ -10,21 +10,18 @@ import SearchRoundedIcon from '@mui/icons-material/SearchRounded';
 function Menu(props) {
     return (
         <div className='menu-parent'>
-            {/* <div className='menu-logo' to="/">Acad!</div> */}
-            <Link to='/'>
-            <img src={require('../Image/Capture.PNG')} width={'47%'} alt={"logo not available"} />
-            </Link>
+            <img to='/' width={'47%'} alt={"logo not available"} />
             <div className='menu-child'>
                 <button className="search"><input type="text" placeholder='Search'/><SearchRoundedIcon></SearchRoundedIcon>Search</button>
                 <div className="menuRight">
                     <Link to="/" style={{ textDecoration: 'none' }}>
-                        <button><HomeRoundedIcon></HomeRoundedIcon>Home</button>
+                        <button onClick={()=>{}}><HomeRoundedIcon></HomeRoundedIcon>Home</button>
                     </Link>
                     <Link to="/notification" style={{ textDecoration: 'none' }}>
                         <button><NotificationsActiveRoundedIcon></NotificationsActiveRoundedIcon>Notification</button>
                     </Link>
                     <Link to='/contact' style={{ textDecoration: 'none' }}>
-                    <button><ContactMailRoundedIcon></ContactMailRoundedIcon>ContactUs</button>
+                    <button><ContactMailRoundedIcon></ContactMailRoundedIcon>About</button>
                     </Link>
                     <Link to="/me" style={{ textDecoration: 'none' }}>
                         <button><img src="" alt="" /><AccountCircleIcon></AccountCircleIcon>Me</button>
