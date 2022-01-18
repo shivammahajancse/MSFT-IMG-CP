@@ -12,31 +12,31 @@
 }
 .events{
     flex: 2;
-    border-radius: 1vmin;
+    /* border-radius: 1vmin; */
     color: black;
     display: flex;
     flex-direction: column;
-    background-color: #F2F3F5;
-    border:0.2vmin solid black;
-    padding: 2vmin;
+    background-color: white;
+    border-bottom:0.5vmin solid black;
+    padding: 1vmin;
     margin-right: 2vmin;
     margin-left: 2vmin;
     align-self: flex-start;
-    /* box-shadow: 0.5vmin 0.5vmin 1vmin 0vmin rgb(31, 30, 30); */
-
-    /* box-shadow: 0vmin 0.5vmin 1vmin 0vmin rgb(31, 30, 30); */
 }
 .indi-event{
     display: flex;
-    border: 0.2vmin solid black;
+    /* border: 0.2vmin solid black; */
     border-radius: 0.5vmin;
     margin: 1vmin;
     padding: 1vmin;
     font-weight: bold;
-    background-color: #F0F7E8;
+    /* background-color: #F0F7E8; */
         /* box-shadow: 0vmin 0.5vmin 1vmin 0vmin rgb(31, 30, 30); */
         /* box-shadow: 0.5vmin 0.5vmin 1vmin 0vmin rgb(31, 30, 30); */
 
+}
+h1{
+    margin: 1vmin;
 }
 .grandParent{
     margin-top: 12vmin;

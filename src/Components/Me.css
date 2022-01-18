@@ -1,0 +1,18 @@
+.me{
+    width: 100%;
+    height: 100%;
+}
+.meParent{
+    /* margin-right: 0;
+    margin-left: 0;
+    margin-top: 15vmin; */
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+}
+.profileImage{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    border-bottom: 0.2vmin solid black;
+}

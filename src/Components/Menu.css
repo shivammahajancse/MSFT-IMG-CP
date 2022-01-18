@@ -1,5 +1,6 @@
 
 .menu-parent{
+    top: 0;
     position: fixed;
     display: flex;
     flex-direction: row;

@@ -12,7 +12,7 @@ function Notification(props) {
         <div className='notification'>
         <Menu LoginIs={props.loginIs} handleLogout={props.handleLogout}></Menu>
            <div className="notification-1">
-               {props.notification.map(each=>{return <div className='indi-Noti'><BadgeIcon style={{margin:'1vmin'}}></BadgeIcon>{each}</div>})}
+               {props.notification.map(each=>{return <div className='indi-Noti'><BadgeIcon style={{margin:'1vmin',fontSize:'5vmin'}}></BadgeIcon>{each}</div>})}
            </div>
         </div>
     )
