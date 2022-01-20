@@ -2,6 +2,7 @@ import React from 'react'
 import Menu from './Menu'
 import './Contactus.css'
 import { Redirect } from 'react-router-dom/cjs/react-router-dom.min';
+import Search from './Search';
 function Contactus(props) {
     if (props.loginIs === false) {
         console.log("inside");
@@ -9,8 +10,8 @@ function Contactus(props) {
     }
     return (
         <div className='contactus'>
-            <Menu LoginIs={props.loginIs} handleLogout={props.handleLogout}></Menu>
-            <div className="contactusChild">
+            <Menu search={props.search} setSearchTrue={props.setSearchTrue} LoginIs={props.loginIs} handleLogout={props.handleLogout}></Menu>
+            {!props.search ? <div className="contactusChild">
                 <div className="contactusChild1">
                     <h1>What Actually are we?</h1>
                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium laudantium, saepe ducimus in aut illum fugit necessitatibus. Quo velit mollitia inventore error, iure consectetur consequuntur similique, possimus quis ipsa laudantium?
@@ -27,7 +28,7 @@ function Contactus(props) {
                     <h2>Contact Us</h2>
                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil soluta minima veniam eos praesentium? Facere enim sit debitis animi quod reprehenderit nulla dolore recusandae commodi, minima, mollitia exercitationem eius tenetur.
                 </div>
-            </div>
+            </div> : <Search/>}
         </div>
     )
 }

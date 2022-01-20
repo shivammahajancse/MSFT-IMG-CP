@@ -5,6 +5,7 @@ import './Home.css'
 import { Redirect } from 'react-router-dom/cjs/react-router-dom.min';
 import Posts from './Posts';
 import EmojiEventsIcon from '@mui/icons-material/EmojiEvents';
+import Search from './Search'
 function Home(props) {
     console.log(props.loginIs);
     if (!props.loginIs) {
@@ -14,8 +15,8 @@ function Home(props) {
     console.log("inside home");
     return (
         <div className='home'>
-            <Menu LoginIs={props.loginIs} handleLogout={props.handleLogout}></Menu>
-            <div className="grandParent">
+            <Menu search={props.search} setSearchTrue={props.setSearchTrue} LoginIs={props.loginIs} handleLogout={props.handleLogout}></Menu>
+            {!props.search ? <div className="grandParent">
                 <div className="events">
                     <h1>Events</h1>
                     {
@@ -25,7 +26,7 @@ function Home(props) {
                 <div className="homeParent">
                     {props.postsData.map(each => { return <Posts postsData={each}></Posts> })}
                 </div>
-            </div>
+            </div> : <Search/>}
         </div>
     )
 }

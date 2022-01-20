@@ -2,8 +2,10 @@ import React from 'react'
 
 function Signup() {
     return (
-        <div>
-        SignUp Page!  
+        <div className='signup'>
+            <div className="signupChild">
+                
+            </div>
         </div>
     )
 }

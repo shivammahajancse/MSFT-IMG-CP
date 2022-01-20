@@ -8,6 +8,7 @@ import Fab from '@mui/material/Fab';
 import AddIcon from '@mui/icons-material/Add';
 import { useState } from 'react';
 import EditIcon from '@mui/icons-material/Edit';
+import Search from './Search';
 function Me(props) {
     const [about, setabout] = useState(props.nameAbout[1].about);
     const [exClicked, setexClicked] = useState(false);
@@ -21,8 +22,8 @@ function Me(props) {
     }
     return (
         <div className='me'>
-            <Menu LoginIs={props.loginIs} handleLogout={props.handleLogout}></Menu>
-            <div className="meParent">
+            <Menu search={props.search} setSearchTrue={props.setSearchTrue} LoginIs={props.loginIs} handleLogout={props.handleLogout}></Menu>
+            {!props.search ? <div className="meParent">
                 <div className="profileImage">
                 {/* <Avatar src="/broken-image.jpg" /> */}
                     <AccountCircleIcon style={{ fontSize: '15vmin', color: 'grey' }}></AccountCircleIcon>
@@ -61,7 +62,7 @@ function Me(props) {
                     }
                     )}
                 </div>
-            </div>
+            </div> : <Search/>}
         </div>
     )
 }
