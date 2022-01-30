@@ -10,7 +10,7 @@ import { useState } from 'react';
 import EditIcon from '@mui/icons-material/Edit';
 import Search from './Search';
 function Me(props) {
-    const [about, setabout] = useState(props.nameAbout[1].about);
+    const [about, setabout] = useState(props.nameAbout[1].about);   
     const [exClicked, setexClicked] = useState(false);
     const [abClicked, setabClicked] = useState(false)
     const [exi, setexi] = useState(props.experience)

@@ -18,6 +18,7 @@ function App() {
   const experience = [{experience:'NSO Winner',company:'National level Olympiard',time:'2012'},{experience:'NMO Winner',company:'National level Olympiard',time:'2014'}];
   const education = [{education:'Shri Guru Tegh Bahadur Academy',class:'8th std'},{education:'Joseph Academy',class:'5th std-8th std'}]
   const searchData = ["Vasu","Radhey","John","Carlton"];
+  const Interests = ["Astrophysics","Yogik World","Stars","Neuroscience"]
   console.log("LoginIs value at start of app " +LoginIs);
   const admin = {id:"VasuVj24",pass:"123"};
   const signupData = (signup)=>{
@@ -44,8 +45,8 @@ function App() {
     <div className="header">
     <Router>
       <Switch>
-        <Route path='/' exact component={()=><Home searchData={searchData} search={search} setSearchTrue={setSearchTrue} loginIs={LoginIs} events={events} handleLogout={handleLogout} postsData={postsData}/>} />
-        <Route path='/Notification' component={()=><Notification searchData={searchData} search={search} setSearchTrue={setSearchTrue} notification={notification} loginIs={LoginIs} handleLogout={handleLogout}/>} />
+        <Route path='/' exact component={()=><Home Interests={Interests} searchData={searchData} search={search} setSearchTrue={setSearchTrue} loginIs={LoginIs} events={events} handleLogout={handleLogout} postsData={postsData}/>} />
+        <Route path='/Notification' component={()=><Notification events={events} Interests={Interests} searchData={searchData} search={search} setSearchTrue={setSearchTrue} notification={notification} loginIs={LoginIs} handleLogout={handleLogout}/>} />
         <Route path='/me' component={()=><Me searchData={searchData} search={search} setSearchTrue={setSearchTrue} nameAbout={nameAbout} experience={experience} education={education} loginIs={LoginIs} handleLogout={handleLogout}/>} />
         <Route path='/login' component={()=><Login searchData={searchData} search={search} setSearchTrue={setSearchTrue} LoginIs={LoginIs} handleLogout={handleLogout} receiveData={receiveData}/>}/>
         <Route path='/signup' component={()=><Signup signupData={signupData}/>}/>
