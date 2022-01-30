@@ -6,10 +6,10 @@ import Notification from './Components/Notification'
 import Home from './Components/Home'
 import Login from './Components/Login'
 import { useState } from 'react';
-import Signup from './Components/Signup';
+import Signup from './Components/Signup.js';
 import Contactus from './Components/Contactus'
 function App() {
-  const [LoginIs, setLoginIs] = useState(false);
+  const [LoginIs, setLoginIs] = useState(true);
   const [search,setsearch]=useState(false);
   const postsData=[{name:'Raju Rastogi',bio:'NIMS School',content:'Hello EveryOne i have just won a competetion of NSO and i would like share with you thank you all for supporting me',like:'10',time:'22:56,7th Jan 2022'},{name:'Raju Rastogi',bio:'NIMS School',content:'Hello EveryOne i have just won a competetion of NSO and i would like share with you thank you all for supporting me',like:'10',time:'22:56,7th Jan 2022'},{name:'Raju Rastogi',bio:'NIMS School',content:'Hello EveryOne i have just won a competetion of NSO and i would like share with you thank you all for supporting me',like:'10',time:'22:56,7th Jan 2022'},{name:'Raju Rastogi',bio:'NIMS School',content:'Hello EveryOne i have just won a competetion of NSO and i would like share with you thank you all for supporting me',like:'10',time:'22:56,7th Jan 2022'},{name:'Raju Rastogi',bio:'NIMS School',content:'Hello EveryOne i have just won a competetion of NSO and i would like share with you thank you all for supporting me',like:'10',time:'22:56,7th Jan 2022'},{name:'Raju Rastogi',bio:'NIMS School',content:'Hello EveryOne i have just won a competetion of NSO and i would like share with you thank you all for supporting me',like:'10',time:'22:56,7th Jan 2022'}]
   const notification=["he called multiple times and redarded","concall on the way","mayham viwed your profile","start preparing for new event"]
@@ -20,7 +20,10 @@ function App() {
   const searchData = ["Vasu","Radhey","John","Carlton"];
   console.log("LoginIs value at start of app " +LoginIs);
   const admin = {id:"VasuVj24",pass:"123"};
-  let searcher;
+  const signupData = (signup)=>{
+    console.log("inside app");
+    return (<Redirect to='/login'/>);
+  }
   const receiveData = (obj)=>{
     if(admin.id===obj.userName && admin.pass===obj.pass){return setLoginIs(true);}
     console.log("LoginIs at receive data "+LoginIs);
@@ -45,7 +48,7 @@ function App() {
         <Route path='/Notification' component={()=><Notification searchData={searchData} search={search} setSearchTrue={setSearchTrue} notification={notification} loginIs={LoginIs} handleLogout={handleLogout}/>} />
         <Route path='/me' component={()=><Me searchData={searchData} search={search} setSearchTrue={setSearchTrue} nameAbout={nameAbout} experience={experience} education={education} loginIs={LoginIs} handleLogout={handleLogout}/>} />
         <Route path='/login' component={()=><Login searchData={searchData} search={search} setSearchTrue={setSearchTrue} LoginIs={LoginIs} handleLogout={handleLogout} receiveData={receiveData}/>}/>
-        <Route path='/signup' component={Signup}/>
+        <Route path='/signup' component={()=><Signup signupData={signupData}/>}/>
         <Route path='/contact' component={()=><Contactus searchData={searchData} search={search} setSearchTrue={setSearchTrue} loginIs={LoginIs} handleLogout={handleLogout}/>}/>
         <Redirect to='/'/>
       </Switch>
