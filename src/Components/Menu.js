@@ -8,12 +8,11 @@ import HomeRoundedIcon from '@mui/icons-material/HomeRounded';
 import NotificationsActiveRoundedIcon from '@mui/icons-material/NotificationsActiveRounded';
 import SearchRoundedIcon from '@mui/icons-material/SearchRounded';
 function Menu(props) {
-    let search;
     return (
         <div className='menu-parent'>
             <img to='/' width={'47%'} alt={"logo not available"} />
             <div className='menu-child'>
-                <button className="search"><input onChange={(e)=>{search=e.target.value}} type="text" placeholder='Search'/><SearchRoundedIcon onClick={()=>{props.setSearchTrue();}} style={{cursor:'pointer'}}></SearchRoundedIcon></button>
+                <button className="search"><input type="text" placeholder='Search'/><SearchRoundedIcon onClick={()=>{props.setSearchTrue();}} style={{cursor:'pointer'}}></SearchRoundedIcon></button>
                 <div className="menuRight">
                     <Link to="/" style={{ textDecoration: 'none' }}>
                         <button onClick={()=>{props.search ? props.setSearchTrue() : console.log("bas ji bdiya")}}><HomeRoundedIcon></HomeRoundedIcon>Home</button>

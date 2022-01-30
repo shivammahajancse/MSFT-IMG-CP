@@ -26,6 +26,9 @@ function Home(props) {
                 <div className="homeParent">
                     {props.postsData.map(each => { return <Posts postsData={each}></Posts> })}
                 </div>
+                <div className="interests">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum quos natus aspernatur ducimus dicta, saepe magni cumque delectus expedita quod non? Eos suscipit est, tenetur optio ducimus repudiandae praesentium nihil.
+                </div>
             </div> : <Search/>}
         </div>
     )

@@ -21,7 +21,8 @@ function Posts(props) {
                     </div>
                 </div>
                 <div className="posts-Content">{props.postsData.content}</div>
-                {/* <div className='image'></div> */}
+                <div className='image'></div>
+                {/* <img src='../Image/Capture.PNG' alt='There is an IMAGE'></img> */}
                 <div className="buttons">
                     <div className="like" onClick={() => { setlike(parseInt(`${like}`) + 1); console.log(props.postsData.like); props.postsData.like = like }}>
                         <Button variant="outlined" color="error">
