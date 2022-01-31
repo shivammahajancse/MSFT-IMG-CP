@@ -2,13 +2,13 @@ import React from 'react'
 import TextField from '@mui/material/TextField';
 import Button from '@mui/material/Button';
 import Alert from '@mui/material/Alert';
-import { Redirect } from 'react-router-dom/cjs/react-router-dom.min';
+// import { Redirect } from 'react-router-dom/cjs/react-router-dom.min';
 import { useState } from 'react';
 import './Signup.css'
 import './Login'
 function Signup(props) {
     const [signupMessage, setsignupMessage] = useState("");
-    const [successMessage, setsuccessMessage] = useState("");
+    // const [successMessage, setsuccessMessage] = useState("");
     let signupObj = {
         name:'',
         lastName:'',

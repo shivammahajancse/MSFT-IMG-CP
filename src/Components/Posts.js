@@ -2,7 +2,7 @@ import React from 'react'
 import './Post.css'
 import Avatar from '@mui/material/Avatar';
 import { useState } from 'react';
-import { Button } from '@mui/material';
+// import { Button } from '@mui/material';
 import FormControlLabel from '@material-ui/core/FormControlLabel';
 import Checkbox from '@material-ui/core/Checkbox';
 import Favorite from '@material-ui/icons/Favorite';
