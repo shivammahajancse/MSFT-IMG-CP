@@ -2,6 +2,9 @@ import React from 'react'
 import Menu from './Menu'
 import '../App'
 import './Home.css'
+import { install } from '@material-ui/styles';
+import { Button } from '@mui/material';
+import { TextField } from '@mui/material';
 import { Redirect } from 'react-router-dom/cjs/react-router-dom.min';
 import Posts from './Posts';
 import EmojiEventsIcon from '@mui/icons-material/EmojiEvents';
@@ -27,8 +30,15 @@ function Home(props) {
                 </div>
                 <div className="homeParent">
                     <div className="addPost">
-                    ADD POSTS
-                        <Avatar src="/broken-image.jpg" />
+                        <div className="addPostOne">
+                            <Avatar src="/broken-image.jpg" />
+                            <TextField style={{ marginLeft: '2vmin' }} id="standard-basic" label="Share your Achievments Now" variant="standard" />
+                        </div>
+                        <div className="addPostBottom">
+                            <button>
+                                Share
+                            </button>
+                        </div>
                     </div>
                     {props.postsData.map(each => { return <Posts postsData={each}></Posts> })}
                 </div>

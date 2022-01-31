@@ -44,6 +44,23 @@
 -webkit-box-shadow: 0px 1px 14px -7px rgba(0,0,0,0.68);
 -moz-box-shadow: 0px 1px 14px -7px rgba(0,0,0,0.68);
 }
+.addPostBottom button{
+    color: black;
+    /* border: 2px solid black; */
+    margin: 1vmin;
+    font-weight: bold;
+}
+.addPostBottom{
+    margin: 1vmin;
+    border-top: 0.4vmin solid rgba(243,242,239,255);
+    height: 5vmin;
+}
+.addPostOne{
+    display: flex;
+    flex-direction: row;
+    margin: 1vmin;
+    align-items: center;
+}
 .indi-event{
     display: flex;
     /* border: 0.2vmin solid black; */
