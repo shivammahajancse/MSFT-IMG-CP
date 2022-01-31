@@ -64,6 +64,7 @@
     padding-right: 5vmin;
     border: 0.2vmin solid black;
     box-shadow: 1.3vmin 1.3vmin 1.4vmin 0.2vmin rgb(31, 30, 30); 
+    background-color: white;
 }
 .info{
     margin: 1vmin;

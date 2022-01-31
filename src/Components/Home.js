@@ -6,6 +6,8 @@ import { Redirect } from 'react-router-dom/cjs/react-router-dom.min';
 import Posts from './Posts';
 import EmojiEventsIcon from '@mui/icons-material/EmojiEvents';
 import Search from './Search'
+import RocketIcon from '@mui/icons-material/Rocket';
+import Avatar from '@mui/material/Avatar';
 function Home(props) {
     console.log(props.loginIs);
     if (!props.loginIs) {
@@ -20,16 +22,21 @@ function Home(props) {
                 <div className="events">
                     <h1>Events</h1>
                     {
-                        props.events ? props.events.map(each => { return <div className='indi-event'><EmojiEventsIcon></EmojiEventsIcon> {each}</div> }) : <div className='indi-event'>No events happening now but we will Soon with a exciting event!</div>
+                        props.events ? props.events.map(each => { return <div className='indi-event'><EmojiEventsIcon style={{ color: 'gold', margin: "0.4vmin" }}></EmojiEventsIcon> {each}</div> }) : <div className='indi-event'>No events happening now but we will Soon with a exciting event!</div>
                     }
                 </div>
                 <div className="homeParent">
+                    <div className="addPost">
+                    ADD POSTS
+                        <Avatar src="/broken-image.jpg" />
+                    </div>
                     {props.postsData.map(each => { return <Posts postsData={each}></Posts> })}
                 </div>
                 <div className="interests">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum quos natus aspernatur ducimus dicta, saepe magni cumque delectus expedita quod non? Eos suscipit est, tenetur optio ducimus repudiandae praesentium nihil.
+                    <h1>Interests</h1>
+                    {props.Interests.map(each => { return <div className='indi-event'><RocketIcon style={{ color: 'lightblue', margin: "0.4vmin" }}></RocketIcon>{each}</div> })}
                 </div>
-            </div> : <Search/>}
+            </div> : <Search />}
         </div>
     )
 }
