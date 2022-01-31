@@ -15,10 +15,10 @@
 }
 .menu-parent .logo{
     margin: 0;
-    background-image: url('../Image/Capture.PNG');
+    background-image: url('../Image/acadLOGO.png');
     background-size: cover;
-    width: 27vmin;
-    height: 7vmin;
+    width: 7.5vmin;
+    height: 8vmin;
     border-radius: 0.5vmin;
     transform: rotate(0.5deg);
 }

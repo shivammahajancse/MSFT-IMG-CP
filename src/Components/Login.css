@@ -25,9 +25,9 @@
     z-index: 5;
 }
 .logo{
-    width: 40vmin;
-    height: 10vmin;
-    background-image: url('../Image/Capture.PNG');
+    width: 24vmin;
+    height: 27vmin;
+    background-image: url('../Image/acadLOGO.png');
     background-size: cover;
     margin: 3vmin;
 }
