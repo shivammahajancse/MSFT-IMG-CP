@@ -9,13 +9,13 @@
 }
 .headingExpi h2{
     /* padding: 1vmin; */
-    border-bottom: 0.1vmin solid black;
+    border-bottom: 0.1vmin solid rgba(243,242,239,255);
 }
 .profileImage{
     display: flex;
     flex-direction: row;
     align-items: center;
-    border-bottom: 0.2vmin solid black;
+    border-bottom: 0.4vmin solid rgba(243,242,239,255);
     /* margin: 2vmin; */
     padding: 2vmin;
     /* border-radius: 1vmin; */
@@ -41,7 +41,7 @@
 }
 .about{
     padding: 2vmin;
-    border-bottom: 0.2vmin solid black;
+    border-bottom: 0.4vmin solid rgba(243,242,239,255);
     /* margin: 2vmin; */
     /* border-radius: 1vmin; */
     /* background-color: #cadff5;
@@ -62,8 +62,8 @@
     flex-direction: column;
     padding-left: 5vmin;
     padding-right: 5vmin;
-    border: 0.2vmin solid black;
-    box-shadow: 1.3vmin 1.3vmin 1.4vmin 0.2vmin rgb(31, 30, 30); 
+    /* border: 0.2vmin solid black; */
+    /* box-shadow: 1.3vmin 1.3vmin 1.4vmin 0.2vmin rgb(31, 30, 30);  */
     background-color: white;
 }
 .info{
