@@ -21,6 +21,7 @@
     height: 8vmin;
     border-radius: 0.5vmin;
     transform: rotate(0.5deg);
+    margin-left: 5vmin;
 }
 .menu-child{
     flex: 7;
