@@ -2,8 +2,6 @@ import React from 'react'
 import Menu from './Menu'
 import '../App'
 import './Home.css'
-import { install } from '@material-ui/styles';
-import { Button } from '@mui/material';
 import { TextField } from '@mui/material';
 import { Redirect } from 'react-router-dom/cjs/react-router-dom.min';
 import Posts from './Posts';

@@ -3,11 +3,9 @@ import TextField from '@mui/material/TextField';
 import Button from '@mui/material/Button';
 import Alert from '@mui/material/Alert';
 // import { Redirect } from 'react-router-dom/cjs/react-router-dom.min';
-import { useState } from 'react';
 import './Signup.css'
 import './Login'
-function Signup(props) {
-    const [signupMessage, setsignupMessage] = useState("");
+function Signup() {
     // const [successMessage, setsuccessMessage] = useState("");
     let signupObj = {
         name:'',
@@ -43,7 +41,7 @@ function Signup(props) {
                         <TextField onChange={(e)=>signupObj.edu=`${e.target.value}`} style={{margin:'1vmin'}} id="filled-basic" label="Education" variant="filled" />
                         <TextField onChange={(e)=>signupObj.class=`${e.target.value}`} style={{margin:'1vmin'}} id="filled-basic" label="Class" variant="filled" />
                     </div>
-                    {signupMessage!=="" ? <Alert style={{margin:'1vmin'}} severity="error">{signupMessage}</Alert> : console.log('no message')}
+                    <Alert style={{margin:'1vmin'}} severity="error">{""}</Alert>
                     {/* {signupMessage ? <Alert style={{margin:'1vmin'}} severity="success">{signupMessage}</Alert> : console.log('no message')} */}
                     <Button style={{width:'30%'}} onClick={handleSignup} variant="outlined">SignUp</Button>
                     {/* {successMessage ? <Alert style={{margin:'1vmin'}} severity="success">{successMessage}</Alert> : console.log("success is not shown")} */}

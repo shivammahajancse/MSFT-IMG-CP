@@ -4,10 +4,6 @@ import Avatar from '@mui/material/Avatar';
 import { useState } from 'react';
 // import { Button } from '@mui/material';
 import FormControlLabel from '@material-ui/core/FormControlLabel';
-import imaginecup from '../Image/imaginecup.png'
-import nso from '../Image/nso.jpg'
-import lilchamps from '../Image/lilchamps.jpg'
-import iit from '../Image/iit.png'
 import Checkbox from '@material-ui/core/Checkbox';
 import Favorite from '@material-ui/icons/Favorite';
 import FavoriteBorder from '@material-ui/icons/FavoriteBorder';

@@ -37,7 +37,7 @@ function Me(props) {
                 <div className="headingExpi">
                     <h2>About</h2><Fab style={{backgroundColor:'lightBlue',borderRadius:'50%'}} onClick={() => { !abClicked ? setabClicked(true) : setabClicked(false) }} color="secondary" aria-label="edit"><EditIcon /></Fab>
                     </div>
-                    {abClicked ? <div className="aboutWrite"><TextField onChange={(e) => newAbout = e.target.value} style={{ alignSelf: 'flex-start' }} id="standard-basic" label="About" variant="standard" /><Fab style={{backgroundColor:'lightBlue',borderRadius:'50%'}} onClick={() => { setabout(newAbout); }} style={{ size: '1%', cursor: 'pointer' }} color="secondary" aria-label="add"><AddIcon /></Fab></div> : console.log("not clicked on about")}
+                    {abClicked ? <div className="aboutWrite"><TextField onChange={(e) => newAbout = e.target.value} style={{ alignSelf: 'flex-start' }} id="standard-basic" label="About" variant="standard" /><Fab style={{backgroundColor:'lightBlue',borderRadius:'50%', size: '1%', cursor: 'pointer'}} onClick={() => { setabout(newAbout); }} color="secondary" aria-label="add"><AddIcon /></Fab></div> : console.log("not clicked on about")}
                     <div className="aboutContent">
                         {about}
                     </div>
@@ -48,7 +48,7 @@ function Me(props) {
                     </div>
                     {
                         exClicked ? <div className="exi">
-                        <div className="aboutWrite"><TextField onChange={(e)=>{experience=`${e.target.value}`;console.log(experience)}} style={{ alignSelf: 'flex-start' }} id="standard-basic" label="Experience" variant="standard" /><Fab style={{backgroundColor:'lightBlue',borderRadius:'50%'}} onClick={() => {setexi([...props.experience+{experience:`${experience}`,company:`${company}`,time:`${time}`}]);console.log("expi "+exi)}} style={{ size: '1%', cursor: 'pointer' }} color="primary" aria-label="add"><AddIcon /></Fab></div>
+                        <div className="aboutWrite"><TextField onChange={(e)=>{experience=`${e.target.value}`;console.log(experience)}} style={{ alignSelf: 'flex-start' }} id="standard-basic" label="Experience" variant="standard" /><Fab style={{backgroundColor:'lightBlue',borderRadius:'50%', size: '1%', cursor: 'pointer'}} onClick={() => {setexi([...props.experience+{experience:`${experience}`,company:`${company}`,time:`${time}`}]);console.log("expi "+exi)}} color="primary" aria-label="add"><AddIcon /></Fab></div>
                         <div className="aboutWrite"><TextField onChange={(e)=>{company=e.target.value}} style={{ alignSelf: 'flex-start' }} id="standard-basic" label="Company" variant="standard" /></div>
                         <div className="aboutWrite"><TextField onChange={(e)=>{time=e.target.value}} style={{ alignSelf: 'flex-start' }} id="standard-basic" label="Time" variant="standard" /></div>
                         </div> : console.log("not showing expi")
