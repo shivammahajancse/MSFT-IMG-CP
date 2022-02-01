@@ -10,7 +10,8 @@ import SearchRoundedIcon from '@mui/icons-material/SearchRounded';
 function Menu(props) {
     return (
         <div className='menu-parent'>
-            <img to='/' width={'47%'} alt={"logo not available"} />
+            <div className='logo' />
+            {/* <div className="Logo"></div> */}
             <div className='menu-child'>
                 <button className="search"><input type="text" placeholder='Search'/><SearchRoundedIcon onClick={()=>{props.setSearchTrue();}} style={{cursor:'pointer'}}></SearchRoundedIcon></button>
                 <div className="menuRight">

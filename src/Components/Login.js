@@ -25,7 +25,7 @@ function Login(props) {
         <div className='login-gp'>
             <div className="login-midparent">
                 <div className="logo"></div>
-                We Support Students and their Dreams !
+                A Community for Better Future !
             </div>
             <div className='login-parent'>
                 <img src="" alt="" />

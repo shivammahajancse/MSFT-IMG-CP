@@ -23,7 +23,7 @@ function Me(props) {
     return (
         <div className='me'>
             <Menu search={props.search} setSearchTrue={props.setSearchTrue} LoginIs={props.loginIs} handleLogout={props.handleLogout}></Menu>
-            {!props.search ? <div className="meParent">
+            {!props.search ? <div className="meParent"> 
                 <div className="profileImage">
                 {/* <Avatar src="/broken-image.jpg" /> */}
                     <AccountCircleIcon style={{ fontSize: '15vmin', color: 'grey' }}></AccountCircleIcon>
@@ -35,20 +35,20 @@ function Me(props) {
                 </div>
                 <div className="about">
                 <div className="headingExpi">
-                    <h2>About</h2><Fab onClick={() => { !abClicked ? setabClicked(true) : setabClicked(false) }} color="secondary" aria-label="edit"><EditIcon /></Fab>
+                    <h2>About</h2><Fab style={{backgroundColor:'lightBlue',borderRadius:'50%'}} onClick={() => { !abClicked ? setabClicked(true) : setabClicked(false) }} color="secondary" aria-label="edit"><EditIcon /></Fab>
                     </div>
-                    {abClicked ? <div className="aboutWrite"><TextField onChange={(e) => newAbout = e.target.value} style={{ alignSelf: 'flex-start' }} id="standard-basic" label="About" variant="standard" /><Fab onClick={() => { setabout(newAbout); }} style={{ size: '1%', cursor: 'pointer' }} color="secondary" aria-label="add"><AddIcon /></Fab></div> : console.log("not clicked on about")}
+                    {abClicked ? <div className="aboutWrite"><TextField onChange={(e) => newAbout = e.target.value} style={{ alignSelf: 'flex-start' }} id="standard-basic" label="About" variant="standard" /><Fab style={{backgroundColor:'lightBlue',borderRadius:'50%'}} onClick={() => { setabout(newAbout); }} style={{ size: '1%', cursor: 'pointer' }} color="secondary" aria-label="add"><AddIcon /></Fab></div> : console.log("not clicked on about")}
                     <div className="aboutContent">
                         {about}
                     </div>
                 </div>
                 <div className="experience">
                     <div className="headingExpi">
-                        <h2>Experience</h2><Fab onClick={() => { !exClicked ? setexClicked(true) : setexClicked(false)}} color="secondary" aria-label="edit"><EditIcon /></Fab> 
+                        <h2>Experience</h2><Fab style={{backgroundColor:'lightBlue',borderRadius:'50%'}} onClick={() => { !exClicked ? setexClicked(true) : setexClicked(false)}} color="secondary" aria-label="edit"><EditIcon /></Fab> 
                     </div>
                     {
                         exClicked ? <div className="exi">
-                        <div className="aboutWrite"><TextField onChange={(e)=>{experience=`${e.target.value}`;console.log(experience)}} style={{ alignSelf: 'flex-start' }} id="standard-basic" label="Experience" variant="standard" /><Fab onClick={() => {setexi([...props.experience+{experience:`${experience}`,company:`${company}`,time:`${time}`}]);console.log("expi "+exi)}} style={{ size: '1%', cursor: 'pointer' }} color="primary" aria-label="add"><AddIcon /></Fab></div>
+                        <div className="aboutWrite"><TextField onChange={(e)=>{experience=`${e.target.value}`;console.log(experience)}} style={{ alignSelf: 'flex-start' }} id="standard-basic" label="Experience" variant="standard" /><Fab style={{backgroundColor:'lightBlue',borderRadius:'50%'}} onClick={() => {setexi([...props.experience+{experience:`${experience}`,company:`${company}`,time:`${time}`}]);console.log("expi "+exi)}} style={{ size: '1%', cursor: 'pointer' }} color="primary" aria-label="add"><AddIcon /></Fab></div>
                         <div className="aboutWrite"><TextField onChange={(e)=>{company=e.target.value}} style={{ alignSelf: 'flex-start' }} id="standard-basic" label="Company" variant="standard" /></div>
                         <div className="aboutWrite"><TextField onChange={(e)=>{time=e.target.value}} style={{ alignSelf: 'flex-start' }} id="standard-basic" label="Time" variant="standard" /></div>
                         </div> : console.log("not showing expi")

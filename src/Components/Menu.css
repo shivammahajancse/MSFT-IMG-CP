@@ -13,9 +13,14 @@
     z-index: 5;
     margin-top: 0;
 }
-img{
-    flex: 3;
-    margin-left: 1vmin;
+.menu-parent .logo{
+    margin: 0;
+    background-image: url('../Image/acadLOGO.png');
+    background-size: cover;
+    width: 7.5vmin;
+    height: 8vmin;
+    border-radius: 0.5vmin;
+    transform: rotate(0.5deg);
 }
 .menu-child{
     flex: 7;
